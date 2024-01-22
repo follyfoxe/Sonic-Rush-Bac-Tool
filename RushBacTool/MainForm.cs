@@ -1,12 +1,10 @@
-﻿using System;
+﻿using RushBacLib;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
-using System.Windows.Forms;
-using RushBacLib;
-
 using System.IO;
+using System.Windows.Forms;
 
 namespace RushBacTool
 {
@@ -108,7 +106,7 @@ namespace RushBacTool
             treeView.EndUpdate();
         }
 
-        void treeView_AfterSelect(object sender, TreeViewEventArgs e)
+        void TreeView_AfterSelect(object sender, TreeViewEventArgs e)
         {
             propGroup.Controls.Clear();
             TreeNode node = e.Node;
@@ -147,7 +145,7 @@ namespace RushBacTool
             bitmaps = null;
         }
 
-        void openToolStripMenuItem_Click(object sender, EventArgs e)
+        void OpenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog dialog = new OpenFileDialog { Filter = "Bac Files (*.bac)|*.bac" })
             {
@@ -156,7 +154,7 @@ namespace RushBacTool
             }
         }
 
-        void exportAllToolStripMenuItem_Click(object sender, EventArgs e)
+        void ExportAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (bacFile == null)
                 return;

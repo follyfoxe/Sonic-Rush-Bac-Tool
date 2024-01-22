@@ -89,7 +89,7 @@ namespace RushBacTool
             this.playButton.TabIndex = 5;
             this.playButton.Text = "Play";
             this.playButton.UseVisualStyleBackColor = true;
-            this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            this.playButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 
             // stopButton
             // 
@@ -99,7 +99,7 @@ namespace RushBacTool
             this.stopButton.TabIndex = 6;
             this.stopButton.Text = "Stop";
             this.stopButton.UseVisualStyleBackColor = true;
-            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
+            this.stopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // splitContainer1
             // 
@@ -139,7 +139,7 @@ namespace RushBacTool
             this.frameUpDown.Name = "frameUpDown";
             this.frameUpDown.Size = new System.Drawing.Size(86, 20);
             this.frameUpDown.TabIndex = 8;
-            this.frameUpDown.ValueChanged += new System.EventHandler(this.frameUpDown_ValueChanged);
+            this.frameUpDown.ValueChanged += new System.EventHandler(this.FrameUpDown_ValueChanged);
             // 
             // panel1
             // 
@@ -154,7 +154,7 @@ namespace RushBacTool
             // 
             // animTimer
             // 
-            this.animTimer.Tick += new System.EventHandler(this.animTimer_Tick);
+            this.animTimer.Tick += new System.EventHandler(this.AnimTimer_Tick);
             // 
             // AnimFrameControl
             // 
